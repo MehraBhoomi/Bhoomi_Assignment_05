@@ -121,15 +121,18 @@ obj.divide()         #9.4
 # also generate an error even if the getter is defined properly.
 
 class Student:
+    def __init__(self):
+        self.__Name = None
+        self.__Rollno = 0
 
     def setName(self, x):
-        self._Name = x
+        self.__Name = x
     def getName(self):
-        return self._Name
+        return self.__Name
     def setRollNumber(self,y):
-        self._Rollno = y
+        self.__Rollno = y
     def getRollNumber(self):
-        return self._Rollno
+        return self.__Rollno
     
 a = Student()
 a.setName("Ram")
